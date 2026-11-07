@@ -25,13 +25,13 @@ create policy "team_lesen" on public.project_state
   for select to anon
   using (
     id = 1 and
-    (current_setting('request.headers', true)::json ->> 'x-team-code') = 'NRM28-ma48:-)'
+    (current_setting('request.headers', true)::json ->> 'x-team-code') = 'HIER-EUREN-TEAM-CODE'
   );
 
 create policy "team_aendern" on public.project_state
   for update to anon
   using (
     id = 1 and
-    (current_setting('request.headers', true)::json ->> 'x-team-code') = 'NRM28-ma48:-)'
+    (current_setting('request.headers', true)::json ->> 'x-team-code') = 'HIER-EUREN-TEAM-CODE'
   )
   with check (id = 1);
