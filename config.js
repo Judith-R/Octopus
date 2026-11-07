@@ -8,6 +8,6 @@
 // (siehe supabase/schema.sql).
 
 export const CONFIG = {
-  supabaseUrl: '', // z. B. 'https://abcdefgh.supabase.co'
-  supabaseKey: '', // "anon"-Key bzw. "publishable"-Key aus Supabase
+  supabaseUrl: https://azzwqnbbflasdwcccumf.supabase.co/rest/v1/
+  supabaseKey: sb_publishable_CcEF6g5mrOkfHKmZR8pATQ_Fy9ljhaP
 };
